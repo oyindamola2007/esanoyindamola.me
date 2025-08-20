@@ -885,7 +885,7 @@ img {
 
 @media (max-width: 768px) {
     .body{
-        max-width: 100%;
+        max-width: 768px;
     }
     .nav-menu {
         display: none;
