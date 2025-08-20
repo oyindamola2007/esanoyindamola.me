@@ -884,6 +884,9 @@ img {
 }
 
 @media (max-width: 768px) {
+    .body{
+        max-width: 100%;
+    }
     .nav-menu {
         display: none;
     }
@@ -958,7 +961,7 @@ img {
         width: 400px;
     }
     .form2 button{
-        width: 140px;
+        width: 120px;
     }
 }
 
