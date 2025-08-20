@@ -201,6 +201,10 @@ img {
 
 /* Mobile Menu Styles */
 @media (max-width: 768px) {
+
+    .nav{
+        max-width: 500px;
+    }
     .nav-menu {
         position: fixed;
         top: 100%;
@@ -949,6 +953,12 @@ img {
         justify-content: center;
         align-items: center;
         
+    }
+    .projecttogether{
+        width: 400px;
+    }
+    .form2 button{
+        width: 140px;
     }
 }
 
