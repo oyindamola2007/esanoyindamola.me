@@ -243,7 +243,34 @@ img {
     color: #888;
     font-size: 14px;
 }
+.hero-buttons a{
+    border-radius: 50px;
+    width: 140px;
+    height: 50px;
+    background-color: #ff6b35;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.resumediv {
+    background-color: #0a0a0a;
+    border-style: solid;
+    color: #ff6b35;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+}
+.resumediv a{
+    background-color: #0a0a0a;
+    height: 20px;
+}
 .about-badge {
     display: inline-block;
     background: #ff6b35;
