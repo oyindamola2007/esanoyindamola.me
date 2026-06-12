@@ -78,7 +78,7 @@
         </h1>
 
         <p class="hero-tagline reveal">
-          I craft modern, responsive, and intuitive web experiences — bridging design and code to create seamless digital products.
+          I craft modern, responsive, and intuitive web experiences , bridging design and code to create seamless digital products.
         </p>
 
         <div class="hero-actions reveal delay-3">
@@ -93,9 +93,9 @@
         </div>
 
         <div class="hero-stats reveal delay-5">
-          <div class="stat"><span class="stat-num" data-target="2">0</span><sup>+</sup><span class="stat-label">Years Exp</span></div>
+          <div class="stat"><span class="stat-num" data-target="3">0</span><sup>+</sup><span class="stat-label">Years Exp</span></div>
           <div class="stat-divider"></div>
-          <div class="stat"><span class="stat-num" data-target="4">0</span><sup>+</sup><span class="stat-label">Projects</span></div>
+          <!-- <div class="stat"><span class="stat-num" data-target="4">0</span><sup>+</sup><span class="stat-label">Projects</span></div> -->
           <div class="stat-divider"></div>
           <div class="stat"><span class="stat-num" data-target="7">0</span><sup>+</sup><span class="stat-label">Technologies</span></div>
         </div>
@@ -134,8 +134,8 @@
 
     <div class="about-grid">
       <div class="about-text reveal">
-        <p>I'm a Front-End Developer with <strong>2+ years of experience</strong>, passionate about creating clean, responsive, and user-friendly interfaces. I've built and contributed to multiple projects demonstrating skills in modern web technologies, problem-solving, and delivering real-world solutions.</p>
-        <p>Currently a final-year Computer Science student at <strong>Kwara State University</strong>, ready to bring this energy to exciting teams and products.</p>
+        <p>I'm a Front-End Developer with <strong>3+ years of experience</strong>, passionate about creating clean, responsive, and user-friendly interfaces. I've built and contributed to multiple projects demonstrating skills in modern web technologies, problem-solving, and delivering real-world solutions.</p>
+        <p>Currently Computer Science student at <strong>Kwara State University</strong>, ready to bring this energy to exciting teams and products.</p>
 
         <div class="about-info-grid">
           <div class="info-item"><span class="info-label">NAME</span><span class="info-val">Esan Oyindamola</span></div>
@@ -159,7 +159,7 @@
   <span class="c-key">name</span>: <span class="c-str">"Esan Oyindamola"</span>,
   <span class="c-key">role</span>: <span class="c-str">"Frontend Developer"</span>,
   <span class="c-key">location</span>: <span class="c-str">"Ilorin, Nigeria"</span>,
-  <span class="c-key">experience</span>: <span class="c-num">2</span>,
+  <span class="c-key">experience</span>: <span class="c-num">32</span>,
   <span class="c-key">stack</span>: [
     <span class="c-str">"React"</span>, <span class="c-str">"JavaScript"</span>,
     <span class="c-str">"HTML5"</span>, <span class="c-str">"CSS3"</span>,
@@ -334,6 +334,21 @@
           <a href="https://web-agency-dev.vercel.app/" target="_blank" rel="noopener" class="project-link">View project →</a>
         </div>
       </div>
+
+         <div class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="https://esanoyindamola-me.vercel.app/assests/project5.png" alt="IDR site" loading="lazy" />
+          <div class="project-overlay">
+            <a href="https://idr-site-three.vercel.app/" target="_blank" rel="noopener" class="overlay-btn">View Live ↗</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Landing Page</span>
+          <h3>IDR Company site</h3>
+          <p>IDR is a responsive web app with a clean UI and smopth user experience</p>
+          <a href="https://idr-site-three.vercel.app/" target="_blank" rel="noopener" class="project-link">View project →</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -349,25 +364,30 @@
       </div>
 
       <div class="contact-grid reveal">
-        <div class="contact-form-wrap">
+        <form id="contactForm" class="contact-form-wrap" action="https://formsubmit.co/esanoyindamola2007@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_subject" value="New message from portfolio contact form" />
+          <input type="hidden" name="_next" value="https://esanoyindamola-me.vercel.app/#contact" />
+
           <div class="form-group">
             <label for="c-name">NAME</label>
-            <input id="c-name" type="text" placeholder="Your name" />
+            <input id="c-name" name="name" type="text" placeholder="Your name" required />
           </div>
           <div class="form-group">
             <label for="c-email">EMAIL</label>
-            <input id="c-email" type="email" placeholder="your@email.com" />
+            <input id="c-email" name="email" type="email" placeholder="your@email.com" required />
           </div>
           <div class="form-group">
             <label for="c-subject">SUBJECT</label>
-            <input id="c-subject" type="text" placeholder="What's this about?" />
+            <input id="c-subject" name="subject" type="text" placeholder="What's this about?" />
           </div>
           <div class="form-group">
             <label for="c-msg">MESSAGE</label>
-            <textarea id="c-msg" placeholder="Tell me about your project..."></textarea>
+            <textarea id="c-msg" name="message" placeholder="Tell me about your project..." required></textarea>
           </div>
-          <button class="btn-primary send-btn" id="sendBtn">Send Message ✦</button>
-        </div>
+          <button type="submit" class="btn-primary send-btn" id="sendBtn">Send Message ✦</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
 
         <div class="contact-info-wrap">
           <div class="contact-item">
@@ -392,21 +412,4 @@
             <a href="https://www.linkedin.com/in/esan-oyindamola-5189a22b6" target="_blank" rel="noopener" class="social-link">in</a>
             <a href="https://www.instagram.com/0yin.damola"     target="_blank" rel="noopener" class="social-link">IG</a>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══ FOOTER ══ -->
-  <footer>
-    <p class="footer-copy">© 2025 Esan Oyindamola — Crafted with ♥ &amp; purple.</p>
-    <div class="footer-links">
-      <a href="#home">Back to top ↑</a>
-      <a href="https://x.com/OyinDamola_A_?s=09" target="_blank" rel="noopener">X</a>
-      <a href="https://www.linkedin.com/in/esan-oyindamola-5189a22b6" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </footer>
-
-  <script src="app.js"></script>
-</body>
-</html>
+      
