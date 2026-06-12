@@ -657,6 +657,7 @@ section {
 }
 .form-group textarea { resize: vertical; min-height: 120px; }
 .send-btn { align-self: flex-start; border: none; cursor: pointer; margin-top: 0.5rem; }
+.form-status { margin-top: 0.85rem; font-size: 0.95rem; color: #a78bfa; min-height: 1.3rem; }
 
 .contact-info-wrap { display: flex; flex-direction: column; gap: 1.25rem; }
 .contact-item {

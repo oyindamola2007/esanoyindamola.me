@@ -387,39 +387,33 @@
 
 
 /* ──────────────────────────────────────────
-   9. SEND BUTTON MICRO-INTERACTION
+   9. SEND BUTTON FORM SUBMISSION
 ────────────────────────────────────────── */
-(function initSendBtn() {
+(function initSendForm() {
+  const form = document.getElementById('contactForm');
   const btn = document.getElementById('sendBtn');
-  if (!btn) return;
+  const status = document.getElementById('formStatus');
+  if (!form || !btn) return;
 
-  btn.addEventListener('click', () => {
-    const name    = document.getElementById('c-name')?.value.trim();
-    const email   = document.getElementById('c-email')?.value.trim();
-    const message = document.getElementById('c-msg')?.value.trim();
+  form.addEventListener('submit', (e) => {
+    const name = form.querySelector('[name="name"]')?.value.trim();
+    const email = form.querySelector('[name="email"]')?.value.trim();
+    const message = form.querySelector('[name="message"]')?.value.trim();
 
     if (!name || !email || !message) {
-      btn.textContent = 'Fill all fields ✗';
-      btn.style.background = 'linear-gradient(135deg, #6b21a8, #7c3aed)';
+      e.preventDefault();
+      btn.textContent = 'Fill required fields ✗';
+      status.textContent = 'Please enter your name, email, and message.';
+      status.style.color = '#f87171';
       setTimeout(() => {
         btn.textContent = 'Send Message ✦';
-        btn.style.background = '';
-      }, 2000);
+        status.textContent = '';
+      }, 3000);
       return;
     }
 
     btn.textContent = 'Sending…';
     btn.disabled = true;
-
-    setTimeout(() => {
-      btn.textContent = 'Sent! ✦';
-      btn.style.background = 'linear-gradient(135deg, #166534, #16a34a)';
-      setTimeout(() => {
-        btn.textContent = 'Send Message ✦';
-        btn.style.background = '';
-        btn.disabled = false;
-      }, 3000);
-    }, 1200);
   });
 })();
 
