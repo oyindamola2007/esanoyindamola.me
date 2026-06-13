@@ -420,7 +420,7 @@
     try {
       // Send via EmailJS
       // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual IDs from emailjs.com
-      await emailjs.send('service 843yd...', 'template bbz9e2z', {
+      await emailjs.send('service_843yd1m', 'template bbz9e2z', {
         from_name:    firstName + ' ' + lastName,
         from_email:   email,
         phone:        phone || 'Not provided',
