@@ -139,7 +139,7 @@
 
         <div class="about-info-grid">
           <div class="info-item"><span class="info-label">NAME</span><span class="info-val">Esan Oyindamola</span></div>
-          <div class="info-item"><span class="info-label">LOCATION</span><span class="info-val">Ilorin, Nigeria</span></div>
+          <div class="info-item"><span class="info-label">LOCATION</span><span class="info-val">Lagos, Nigeria</span></div>
           <div class="info-item"><span class="info-label">EMAIL</span><span class="info-val">esanoyindamola2007@gmail.com</span></div>
           <div class="info-item"><span class="info-label">PHONE</span><span class="info-val">+(234) 9017816466</span></div>
           <div class="info-item"><span class="info-label">STATUS</span><span class="info-val available">● Open to Work</span></div>
@@ -158,7 +158,7 @@
           <pre class="code-body"><code><span class="c-kw">const</span> <span class="c-var">developer</span> = {
   <span class="c-key">name</span>: <span class="c-str">"Esan Oyindamola"</span>,
   <span class="c-key">role</span>: <span class="c-str">"Frontend Developer"</span>,
-  <span class="c-key">location</span>: <span class="c-str">"Ilorin, Nigeria"</span>,
+  <span class="c-key">location</span>: <span class="c-str">"Lagos, Nigeria"</span>,
   <span class="c-key">experience</span>: <span class="c-num">3</span>,
   <span class="c-key">stack</span>: [
     <span class="c-str">"React"</span>, <span class="c-str">"JavaScript"</span>,
@@ -363,51 +363,73 @@
         <p class="section-sub">Have a project in mind or just want to say hello? Send a message — I respond within 24 hours.</p>
       </div>
 
-      <div class="contact-grid reveal">
-        <form id="contactForm" class="contact-form-wrap" novalidate>
+      <div class="booking-cta reveal">
+        <div>
+          <span class="section-tag">// book_a_session</span>
+          <h3>Want to book a session?</h3>
+          <p>Choose a time that works for you and let's talk about your project.</p>
+        </div>
+        <a
+          href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0gjkhxELfgrYqkGoYiTkvoLQbnL6jYxwZxoP8V5QkumvtZJ7utv88I_4_fv5xJA_Wa9h8EVL4V?gv=true"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary"
+        >Open Calendar ↗</a>
+      </div>
 
-          <div class="form-group">
-            <label for="c-name">NAME</label>
-            <input id="c-name" name="name" type="text" placeholder="Your name" required />
-          </div>
-          <div class="form-group">
-            <label for="c-email">EMAIL</label>
-            <input id="c-email" name="email" type="email" placeholder="your@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="c-subject">SUBJECT</label>
-            <input id="c-subject" name="subject" type="text" placeholder="What's this about?" />
-          </div>
-          <div class="form-group">
-            <label for="c-msg">MESSAGE</label>
-            <textarea id="c-msg" name="message" placeholder="Tell me about your project..." required></textarea>
-          </div>
-          <button type="submit" class="btn-primary send-btn" id="sendBtn">Send Message ✦</button>
-          <p class="form-status" id="formStatus" aria-live="polite"></p>
-        </form>
+      <!-- ══ CONTACT ══ -->
+      <div class="contact-columns reveal">
 
-        <div class="contact-info-wrap">
-          <div class="contact-item">
-            <div class="contact-icon">📞</div>
-            <div><span class="ci-label">Phone</span><span class="ci-val">+(234) 9017816466</span></div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">✉️</div>
-            <div><span class="ci-label">Email</span><span class="ci-val">esanoyindamola2007@gmail.com</span></div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">⏰</div>
-            <div><span class="ci-label">Hours</span><span class="ci-val">Mon – Fri: 9AM – 6PM West Africa Time (WAT)</span></div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">📍</div>
-            <div><span class="ci-label">Location</span><span class="ci-val">Ilorin, Nigeria</span></div>
-          </div>
+        <!-- Let's Work Together -->
+        <div class="contact-left">
+          <span class="section-tag">// lets_talk</span>
+          <h3 class="contact-panel-title">Let's Work Together</h3>
+          <p class="contact-panel-desc">Have a project in mind or just want to say hello? Send a message below, or reach me directly through email or socials — I respond within 24 hours.</p>
 
-          <div class="contact-socials">
-            <a href="https://x.com/OyinDamola_A_?s=09"         target="_blank" rel="noopener" class="social-link">𝕏</a>
-            <a href="https://www.linkedin.com/in/esan-oyindamola-5189a22b6" target="_blank" rel="noopener" class="social-link">in</a>
-            <a href="https://www.instagram.com/0yin.damola"     target="_blank" rel="noopener" class="social-link">IG</a>
+          <form id="contactForm" class="contact-form-wrap" novalidate>
+            <div class="form-group">
+              <label for="c-name">NAME</label>
+              <input id="c-name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="c-email">EMAIL</label>
+              <input id="c-email" name="email" type="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="c-subject">SUBJECT</label>
+              <input id="c-subject" name="subject" type="text" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label for="c-msg">MESSAGE</label>
+              <textarea id="c-msg" name="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary send-btn" id="sendBtn">Send Message ✦</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-info-wrap">
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div><span class="ci-label">Phone</span><span class="ci-val">+(234) 9017816466</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div><span class="ci-label">Email</span><span class="ci-val">esanoyindamola2007@gmail.com</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">⏰</div>
+              <div><span class="ci-label">Hours</span><span class="ci-val">Mon – Fri: 9AM – 6PM West Africa Time (WAT)</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div><span class="ci-label">Location</span><span class="ci-val">Lagos, Nigeria</span></div>
+            </div>
+
+            <div class="contact-socials">
+              <a href="https://x.com/OyinDamola_A_?s=09"         target="_blank" rel="noopener" class="social-link">𝕏</a>
+              <a href="https://www.linkedin.com/in/esan-oyindamola-5189a22b6" target="_blank" rel="noopener" class="social-link">in</a>
+              <a href="https://www.instagram.com/0yin.damola"     target="_blank" rel="noopener" class="social-link">IG</a>
+            </div>
           </div>
         </div>
       </div>
